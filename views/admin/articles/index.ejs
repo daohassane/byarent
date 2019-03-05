@@ -1,0 +1,102 @@
+<%- include('../../partials/admin/_header'); -%>
+<!-- Sidenav -->
+<nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+    <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand pt-0" href="./index.html">
+            <h1>Byarent</h1>
+        </a>
+        <!-- Collapse -->
+        <%- include('../../partials/admin/_sidemenu'); -%>
+    </div>
+</nav>
+<!-- Main content -->
+<div class="main-content">
+    <!-- Header -->
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--7">
+        <div class="row">
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-header border-0">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h3 class="mb-0">Houses list</h3>  
+                            </div>
+                            <div class="col-4">
+                                <a href="" class="btn btn-primary float-right">Add house</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table align-items-center table-flush">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">title</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">For</th>
+                                    <th scope="col">Picture</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="media align-items-center">
+                                            <div class="media-body">
+                                                <span class="mb-0 text-sm">Argon Design System</span>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        $ 2,500
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-dot mr-4">
+                                            <i class="bg-warning"></i> sale
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="avatar-group">
+                                            <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                                            <img alt="Image placeholder" src="../assets/img/theme/team-1-800x800.jpg" class="rounded-circle">
+                                            </a>
+                                            <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Romina Hadid">
+                                            <img alt="Image placeholder" src="../assets/img/theme/team-2-800x800.jpg" class="rounded-circle">
+                                            </a>
+                                            <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Alexander Smith">
+                                            <img alt="Image placeholder" src="../assets/img/theme/team-3-800x800.jpg" class="rounded-circle">
+                                            </a>
+                                            <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Jessica Doe">
+                                            <img alt="Image placeholder" src="../assets/img/theme/team-4-800x800.jpg" class="rounded-circle">
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="dropdown">
+                                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('../../partials/admin/_footer'); -%>

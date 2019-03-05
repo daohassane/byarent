@@ -1,0 +1,78 @@
+.title-cart
+    font-weight: 500
+    padding: 20px 0 0 20px
+
+.cart-content
+    display: block
+    padding: 20px
+    border-right: 1px solid rgba(#dddddd, .5)
+
+    .item-card
+        display: flex
+        flex-direction: row
+        background-color: #fff
+        padding: 20px
+        border: 1px solid rgba(#ddd, .3)
+        box-shadow: 0 2px 8px rgba(#000000, .05)
+        border-radius: 5px
+        height: 100px
+        line-height: 50px
+        margin-bottom: 20px
+
+        .item-pic
+            flex: 0 0 90px
+            height: 100%
+
+            img
+                width: 100%
+                height: auto
+                object-fit: cover
+                vertical-align: middle
+
+        .item-title
+            flex: auto
+            height: 100%
+            font-weight: 500
+            padding: 0 20px
+            font-size: 18px
+
+        .item-price
+            flex: 0 0 120px
+            height: 100%
+            font-weight: 800
+            padding: 0 20px
+
+        .item-action
+            flex: 0 0 40px
+            height: 100%
+
+            i
+                cursor: pointer
+                color: #777777
+
+.cart-checkout
+    display: block
+    padding: 100px 0 0 0
+
+    .box
+        display: block
+        background-color: #fff
+        padding: 20px
+        border-radius: 5px
+        border: 1px solid #ddd
+
+        .row-cart
+            display: flex
+            flex-direction: row
+            padding: 10px 0
+
+            span, strong
+                flex: 1
+
+                &:last-child
+                    text-align: right
+
+        .foot
+            display: block
+            padding: 20px 0 0 0
+            border-top: 1px solid rgba(#ddd, .5)

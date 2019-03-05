@@ -1,0 +1,104 @@
+<%- include('partials/_header'); -%>
+<%- include('partials/_navbar'); -%>
+<main class="content">
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://realestate.robbreport.com/sites/default/files/styles/mediabarimage/public/2018-10/ROBB-Value-Added-Lot-026FS-Front-Exterior-Rendering-818023_hi-res_Golden-Oak-FSPR-Lot-26-less-reflective-r2.jpg.jpeg?itok=gDhCKAbK');">
+    <div class="banner-content">
+      <h1>Lorem ipsum dolor</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+  <div class="latest">
+    <div class="container">
+      <div class="title">
+        <h3>Last houses</h3>
+      </div>
+      <div class="latest__content">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://cdn.vox-cdn.com/thumbor/Nqj_NACBd-MYueCnjB2Y5ZB70ig=/0x0:3000x2000/1200x800/filters:focal(1260x760:1740x1240)/cdn.vox-cdn.com/uploads/chorus_image/image/59543123/290_West_St_3B_14.0.jpg');">
+              <div class="card-category">$ 1500</div>
+              <div class="card-description">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <a class="card-link" href="/detail/lorem-ipsum-dolor"></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://s-ec.bstatic.com/images/hotel/max1024x768/924/92485933.jpg');">
+              <div class="card-category">$ 1500</div>
+              <div class="card-description">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+              <a class="card-link" href="/detail/lorem-ipsum-dolor" ></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://data.alauda-detmold.de/apartments/9/images/das-lila-apartment-1-og-e70b2b7f8928856cfaf5d9a0ac99cee6678479.jpeg');">
+              <div class="card-category">$ 1500</div>
+              <div class="card-description">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+              <a class="card-link" href="/detail/lorem-ipsum-dolor" ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://cdn.vox-cdn.com/thumbor/Nqj_NACBd-MYueCnjB2Y5ZB70ig=/0x0:3000x2000/1200x800/filters:focal(1260x760:1740x1240)/cdn.vox-cdn.com/uploads/chorus_image/image/59543123/290_West_St_3B_14.0.jpg');">
+              <div class="card-category">$ 1500</div>
+              <div class="card-description">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <a class="card-link" href="/detail/lorem-ipsum-dolor" ></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://s-ec.bstatic.com/images/hotel/max1024x768/924/92485933.jpg');">
+              <div class="card-category">$ 1500</div>
+              <div class="card-description">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+              <a class="card-link" href="/detail/lorem-ipsum-dolor" ></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://data.alauda-detmold.de/apartments/9/images/das-lila-apartment-1-og-e70b2b7f8928856cfaf5d9a0ac99cee6678479.jpeg');">
+              <div class="card-category">$ 1500</div>
+              <div class="card-description">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+              <a class="card-link" href="/detail/lorem-ipsum-dolor" ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partnership">
+    <div class="partner">
+      <img src="https://beta.codeln.com/static/frontend/images/logo/cd_ln_wo.b30f18e6d947.png" alt="logo codeln">
+    </div>
+    <div class="partner">
+      <img src="https://meltwater.org/wp-content/themes/meltwater/images/logo_img2.png" alt="logo mest">
+    </div>
+    <div class="partner">
+      <img src="https://beta.codeln.com/static/frontend/images/logo/cd_ln_wo.b30f18e6d947.png" alt="logo codeln">
+    </div>
+    <div class="partner">
+      <img src="https://beta.codeln.com/static/frontend/images/logo/cd_ln_wo.b30f18e6d947.png" alt="logo codeln">
+    </div>
+  </div>
+  <a href="/cart" class="shop-basket">
+    <% if (locals.cart) { %><span class="count"><%= locals.cart.length %></span><% } %>
+    <span class="icon">
+      <i class="fa fa-shopping-cart"></i>
+    </span>
+  </a>
+</main>
+<%- include('partials/_footer'); -%>

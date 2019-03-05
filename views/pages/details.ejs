@@ -1,0 +1,94 @@
+<%- include('../partials/_header'); -%>
+<%- include('../partials/_navbar'); -%>
+<main class="content">
+<div class="detail">
+    <div class="detail__header">
+        <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/735/73580604.jpg">
+        <div class="more-pic">
+            <div class="pic">
+                <img src="http://tamworthgardens.com.au/wp-content/uploads/2014/11/serviced-apartment-interior-2.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://r-ec.bstatic.com/images/hotel/max1024x768/637/63780546.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://q-xx.bstatic.com/images/hotel/max1024x768/828/82898480.jpg" alt="">
+            </div>
+            <div class="pic">
+                <img src="https://images1.apartments.com/i2/4N9G9ycBOHvuM_nZNp-HSNb15adcmbiEKVtBJ3_-FWw/111/renaissance-villas-apartment-homes-las-vegas-nv-2hab-2ba---cocina-de-estoril.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="detail__body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="infos">
+                        <div class="infos__box">
+                            <div class="head">
+                                <strong>John Doe</strong>
+                                <span>Published at 03/02/2019</span>
+                            </div>
+                            <div class="item">
+                                <span>
+                                    <img src="/images/001-bed.svg" alt="">
+                                    <strong>4</strong>
+                                </span>
+                                <span>
+                                    <img src="/images/002-shower.svg" alt="">
+                                    <strong>5</strong>
+                                </span>
+                            </div>
+                            <div class="item">
+                                <span>
+                                    <img src="/images/003-kitchen.svg" alt="">
+                                    <strong>2</strong>
+                                </span>
+                                <span>
+                                    <img src="/images/004-parking.svg" alt="">
+                                    <strong>1</strong>
+                                </span>
+                            </div>
+                            <div class="item">
+                                <span>
+                                    <img src="/images/005-swim.svg" alt="">
+                                    <strong>1</strong>
+                                </span>
+                                <span>
+                                    <img src="/images/006-cctv.svg" alt="">
+                                </span>
+                            </div>
+                            <div class="foot">
+                                <strong>$ 250 000</strong>
+                                <button class="btn btn-primary" onclick="event.preventDefault(); document.getElementById('itemForm').submit()">
+                                    + <i class="fa fa-shopping-basket"></i>
+                                    <form method="POST" action="/add/cart" id="itemForm" style="display: none">
+                                        <input type="text" name="title" value="lorem ipsum">
+                                        <input type="text" name="price" value="29000">
+                                        <input type="text" name="picture" value="https://q-xx.bstatic.com/images/hotel/max1024x768/828/82898480.jpg">
+                                    </form>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="description">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti cupiditate quia sequi? Perferendis quibusdam id aliquam quisquam assumenda sunt dolores natus eaque aperiam autem sit, ipsam officiis odit eos eveniet, minus ea error facilis doloribus et vitae neque. Voluptates unde eveniet vel culpa quidem modi expedita non aspernatur neque, pariatur perferendis omnis recusandae error reiciendis nam ullam voluptatibus, dicta, labore explicabo eaque dolorum minima! Architecto eligendi quasi odit deleniti repudiandae, eius inventore voluptatum ad illo? Odit asperiores voluptates autem hic voluptatum, iusto porro eius ratione esse magnam. Maiores facilis deserunt, vitae dolorum iusto illum voluptates consectetur harum, tenetur at debitis consequatur tempore quis? Mollitia ratione facilis necessitatibus, dolores sunt excepturi non dolorem voluptate aut culpa maxime laudantium incidunt neque! Beatae, dolorem. Nesciunt debitis corrupti, placeat neque reprehenderit eos suscipit unde cum ipsa consequuntur expedita quaerat explicabo accusantium nulla vitae sit! Et, ex facilis? Perspiciatis dolore nostrum veritatis quibusdam sequi laboriosam at unde, distinctio, temporibus delectus amet nulla, voluptate illum pariatur omnis deleniti ea! Quisquam sapiente, aspernatur eum quod error, sed voluptate placeat officia ipsum et nostrum itaque earum corrupti provident laboriosam. Mollitia qui eaque nihil, facilis saepe ab dolore obcaecati, aliquid dolores numquam perspiciatis hic adipisci aperiam molestiae perferendis amet consequuntur suscipit. Voluptatum quisquam numquam alias harum sit labore, fugit aliquam, minima minus perspiciatis reiciendis et obcaecati, natus optio accusantium dolor quo ipsum distinctio? Consequuntur, dignissimos reprehenderit, sint nam velit quidem voluptas fugit totam at aperiam rem facilis ratione numquam error iure! Delectus eligendi nihil odio placeat minus possimus quia, praesentium ipsa nobis aspernatur magni tempore voluptates modi odit unde quibusdam, maxime asperiores in, aliquid tempora temporibus quo non debitis soluta? Doloremque ipsam explicabo porro aperiam incidunt et quam earum autem suscipit sed commodi saepe totam laudantium quidem fuga ducimus itaque, libero accusantium iusto! Repellendus reprehenderit at veritatis sapiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="/cart" class="shop-basket">
+    <% if (locals.cart) { %><span class="count"><%= locals.cart.length %></span><% } %>
+    <span class="icon">
+        <i class="fa fa-shopping-cart"></i>
+    </span>
+</a>
+</main>
+<%- include('../partials/_footer'); -%>

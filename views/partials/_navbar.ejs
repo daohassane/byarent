@@ -1,0 +1,52 @@
+<div class="navbar-bryant">
+    <!-- Logo -->
+    <a href="/" class="navbar-bryant-brand">
+        <h1>Byarent</h1>
+    </a>
+
+    <!-- Right Navigation -->
+    <div class="navbar-bryant-right hidden-xs hidden-sm">
+
+        <a href="/" class="navbar-bryant-item navbar-bryant-link" id="home">Home</a>
+        <a href="/forrent" class="navbar-bryant-item navbar-bryant-link" id="rent">For rent</a>
+        <a href="/forsale" class="navbar-bryant-item navbar-bryant-link" id="sale">For sale</a>
+        <a href="/contact" class="navbar-bryant-item navbar-bryant-link" id="contact">Contact</a>
+        <% if (!locals.authenticated) {%>
+        <a href="/auth/login" class="navbar-bryant-item navbar-bryant-link" id="login">Login</a>
+        <% } %>
+
+        <!-- Profile picture with dropdown list -->
+        <% if (locals.authenticated) {%>
+        <div class="navbar-bryant-item">
+            <div class="dropdown">
+                <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-bryant-menu" data-toggle="dropdown">
+                <ul class="dropdown-menu dropdown-menu-right navbar-bryant-dropdown-menu">
+                    <% if (locals.admin) {%>
+                    <li><a href="/admin">Dashboard</a></li>
+                    <% } %>
+                    <li><a href="#">Favorite</a></li>
+                    <li><a href="/auth/logout">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <% } %>
+    </div>
+
+    <!-- Dropdown appearing on mobile only -->
+    <div class="navbar-bryant-item hidden-md hidden-lg">
+        <div class="dropdown">
+        <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-bryant-dropdown-menu">
+            <li><a href="/" id="home">Home</a></li>
+            <li><a href="/forrent" id="rent">For rent</a></li>
+            <li><a href="/forsale" id="sale">For sale</a></li>
+            <li><a href="/contact" id="contact">Contact</a></li>
+            <% if (!locals.authenticated) {%>
+                <li>
+                    <a href="/auth/login" class="navbar-bryant-item navbar-bryant-link" id="login">Login</a>
+                </li>
+            <% } %>
+        </ul>
+        </div>
+    </div>
+</div>

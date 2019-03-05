@@ -1,0 +1,48 @@
+<%- include('../../partials/_header'); -%>
+<%- include('../../partials/_admin-navbar'); -%>
+<main class="content">
+    <div class="container-fluid">
+        <div class="p5">
+            <br>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+                <form action="" class="form" method="post">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Create new article</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label for="name" class="control-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="description" class="control-label">Description</label>
+                                <textarea name="description" id="description" cols="30" rows="10" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="price" class="control-label">Price</label>
+                                <input type="number" id="price" name="price" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="image" class="control-label">Image</label>
+                                <input type="file" id="image" name="image" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="panel-footer">
+                            <div class="form-group">
+                                <button class="btn btn-warning" type="reset">Reset</button>
+                                <button class="btn btn-primary" type="submit">Create article</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<%- include('../../partials/_footer'); -%>
